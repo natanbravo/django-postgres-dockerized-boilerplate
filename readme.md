@@ -59,11 +59,11 @@ This repository contains a Django project configured to run within Docker contai
 6. **Access the API:**
    - API: http://localhost:8000/
    - DJANGO ADMIN: http://localhost:8000/admin
-   - 
+
 
 7. **Superuser credentials (automatically created during build):**
-    - Username:<env-file-username>
-    - Password:<env-file-password>
+    - Username: your-env-file-username
+    - Password: your-env-file-password
 
 
 
