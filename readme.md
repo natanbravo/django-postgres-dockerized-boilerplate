@@ -24,37 +24,31 @@ This repository contains a Django project configured to run within Docker contai
    ```bash
    git clone https://github.com/natanbravo/django-postgres-dockerized-boilerplate.git
 
-
 2. **Navigate to the project directory:**
     ```bash
    cd django-postgres-dockerized-boilerplate
-
 
 3. **Create your virtual environment:**
     ```bash
     python3 -m venv venv
 
-
 4. **Activate your venv:**
     
-    - Linux/MacOS
-      ```bash
-      source venv/bin/activate
+ - Linux/MacOS
+   ```bash
+   source venv/bin/activate
 
-    - Windows
-      ```bash
-      .\venv\Scripts\Activate
+ - Windows
+   ```bash
+   .\venv\Scripts\Activate
 
-
-5. **Installing dependencies:**      
+5. **Give permissions to init_superuser.sh:**      
     ```bash
-    pip install -r requirements.txt
-
+    chmod +x init_superuser.sh
 
 5. **Build and run the Docker containers:**
     ```bash
     docker-compose up -d --build
-
 
 6. **Access the API:**
    - API: http://localhost:8000/
@@ -64,8 +58,5 @@ This repository contains a Django project configured to run within Docker contai
 7. **Superuser credentials (automatically created during build):**
     - Username: your-env-file-username
     - Password: your-env-file-password
-
-
-
 
 **Happy coding! 🚀**
